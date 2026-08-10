@@ -18,9 +18,9 @@
 
 | Mục | Nội dung |
 |-----|----------|
-| Public URL | — (chưa deploy lên cloud, xem phần "Phương Án Dự Phòng" bên dưới) |
-| Platform | Dự kiến Railway — hiện đang dùng phương án dự phòng Local Fallback (Docker Compose), chưa deploy thật lên Railway/Render |
-| Ngày deploy | chưa deploy — cần cập nhật ngày thật sau khi lên cloud |
+| Public URL | https://k4-day12-chat.onrender.com |
+| Platform | Render |
+| Ngày deploy | 2026-08-10 |
 
 ## Biến Môi Trường Đã Set Trên Cloud
 
@@ -28,9 +28,9 @@ Ghi tên biến và **nguồn giá trị**, không ghi giá trị:
 
 | Biến | Đã set | Ghi chú |
 |------|--------|---------|
-| `PORT` | — | chưa deploy cloud; local dùng mặc định 8000 |
-| `API_TOKEN` | ✅ | đặt trong `.env` cục bộ, không nằm trong repo |
-| `REDIS_URL` | ✅ | service `redis` trong `docker-compose.yml` (`redis://redis:6379/0`) |
+| `PORT` | ✅ | `8000` |
+| `API_TOKEN` | ✅ | đặt trong `.env` cục bộ và trên dashboard |
+| `REDIS_URL` | ✅ | Upstash Redis (`rediss://...`) |
 | `BUCKET_CAPACITY` | ✅ | 10 |
 | `REFILL_PER_MINUTE` | ✅ | 10 |
 | `DAILY_BUDGET_USD` | ✅ | 1.0 |
